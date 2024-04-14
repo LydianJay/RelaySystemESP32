@@ -45,15 +45,16 @@ void setup() {
   WiFi.mode(WIFI_AP); 
   WiFi.softAP("RelaySystem", "admin123");
   server.begin();
-  delay(2500);
+  delay(2000);
   lcd.init();                      
   lcd.backlight();
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("Made In China");
+  lcd.print("Power Limit");
   lcd.setCursor(0,1);
+  lcd.print("Consumption");
   lcd.print(WiFi.softAPIP());
-  delay(2500);
+  delay(2000);
   digitalWrite(pinRelay, RELAY_OPEN);
 }
 
