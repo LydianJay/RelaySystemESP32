@@ -50,9 +50,9 @@ void setup() {
   lcd.backlight();
   lcd.clear();
   lcd.setCursor(0,0);
-  lcd.print("Power Limit");
+  lcd.print("  Power Limit");
   lcd.setCursor(0,1);
-  lcd.print("Consumption");
+  lcd.print("  Consumption");
   lcd.print(WiFi.softAPIP());
   delay(2000);
   digitalWrite(pinRelay, RELAY_OPEN);
